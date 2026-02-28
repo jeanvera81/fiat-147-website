@@ -1,0 +1,323 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    background-image: url("IMG_2245.jpg");
+    background-repeat: repeat;
+    background-size: 250px;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #000;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 2px solid #c1121f;
+}
+
+.logo h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff0000;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff1a1a,
+        0 0 40px #ff1a1a;
+}
+
+/* =========================
+   BOTONES NAV
+========================= */
+.nav-buttons {
+    margin-top: 15px;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: #c1121f;
+}
+
+.nav-buttons .active {
+    background-color: #c1121f;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #111, #1c1c1c);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ffb703;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #c1121f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e63946;
+}
+
+/* =========================
+   SECCIÓN AUTOS
+========================= */
+.autos {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.autos h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   CARRUSEL
+========================= */
+.carousel {
+    max-width: 900px;
+    margin: auto;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* =========================
+   HISTORIA ESTILO RETRO PRO
+========================= */
+
+.historia {
+    padding: 70px 40px;
+    margin: 60px auto;
+    max-width: 900px;
+    text-align: left;
+
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+/* TÍTULO */
+.historia h2 {
+    font-size: 40px;
+    color: #ffb703;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+#historia p {
+    color: #ffb703;           /* gris oscuro elegante */
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* TEXTO */
+.historia p {
+    font-size: 19px;
+    line-height: 1.9;
+    color: #99582a;
+}
+
+/* Primera letra grande estilo revista */
+.historia p::first-letter {
+    font-size: 55px;
+    font-weight: bold;
+    color: #ffb703;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+/* =========================
+   NOSOTROS
+========================= */
+.nosotros {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.nosotros h2 {
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    max-width: 700px;
+    margin: auto;
+    color: #ffb703;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+.contacto {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contacto form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contacto textarea {
+    height: 120px;
+}
+
+.contacto button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #c1121f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto button:hover {
+    background-color: #e63946;
+}
+
+/* =========================
+   REDES
+========================= */
+.redes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.redes h2 {
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background-color: #c1121f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #e63946;
+}
+
+/* =========================
+   SECCIONES ANIMADAS (SPA)
+========================= */
+.seccion {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    display: none;
+}
+
+.seccion.activa {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    color: #ffb703;
+    border-top: 1px solid #222;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    body {
+        background-size: 120px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .autos,
+    .nosotros,
+    .contacto,
+    .historia {
+        padding: 40px 20px;
+    }
+
+    .nav-buttons button {
+        margin: 5px;
+    }
+
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
